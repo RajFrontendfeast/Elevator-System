@@ -65,6 +65,7 @@ h6 {
 
 .elevate_block {
   flex: 1;
+  position: relative;
 }
 
 .floor,
@@ -97,7 +98,7 @@ h6 {
 .action_btn {
   font-size: .8em;
   font-weight: 500;
-  border: 1px solid green;
+  border: 1px solid rgb(47, 158, 47);
   padding-inline: 10px;
   padding-block: 6px;
   background: transparent;
@@ -106,11 +107,20 @@ h6 {
   width: 75%;
   cursor: pointer;
   transition: ease-in-out .2s;
-  color: green;
+  color: #fff;
+  background: rgb(47, 158, 47);
 }
 
 .action_btn:hover {
   box-shadow: 5px 5px 0px rgba(0, 0, 0, .08), -10px -10px 0px rgba(255, 255, 255, 1);
+}
+
+.icon{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 10px;
 }
 
 .icon,
@@ -128,14 +138,6 @@ h6 {
   width: 30px;
   height: 30px;
   transition: top 1s ease;
-}
-
-.floor_block_active {
-  background-color: green;
-}
-
-.floor_block_busy {
-  background-color: red;
 }
 
 .waiting{
